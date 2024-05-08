@@ -23,6 +23,8 @@
   <!-- google fonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
 
 <body class="body">
   <audio loop="" id="audioPlayer" style="display: none">
@@ -59,6 +61,12 @@
           <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
               &#60;/Services&#62;
+            </a>
+          </li>
+
+          <li class="plans" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#plans" aria-label="plans menu button">
+              &#60;/Plans&#62;
             </a>
           </li>
 
@@ -102,6 +110,11 @@
         <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
           <a href="#skills" tabindex="0" aria-label="skills menu button">
             &#60;/Services&#62;
+          </a>
+        </li>
+        <li id="plans-mobile-tab" class="mobile-navbar-tabs-li plans" onclick="hidemenubyli()">
+          <a href="#plans" tabindex="0" aria-label="plans menu button">
+            &#60;/Plans&#62;
           </a>
         </li>
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
@@ -311,6 +324,131 @@
       </div>
     </section>
     <!-- skills section ends -->
+
+
+    <!-- price cards sectons starts -->
+
+    <section class="projects-section-container" id="plans">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Select Plan Accordingly">
+            &#60;/Prices&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+    <div class="wrapper">
+      <input type="radio" name="slider" id="tab-1">
+      <input type="radio" name="slider" id="tab-2" checked>
+      <input type="radio" name="slider" id="tab-3">
+
+      <header>
+          <label for="tab-1" class="tab-1">Basic</label>
+          <label for="tab-2" class="tab-2">Standard</label>
+          <label for="tab-3" class="tab-3">Premium </label>
+          <div class="slider"></div>
+      </header>
+
+      <div class="cards-area">
+          <div class="cards">
+              <div class="row row-1">
+                  <div class="pricing-details">
+                      <span>10</span>
+                      <p>For beginner use</p>
+                  </div>
+
+                  <ul class="features">
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>5 Logo Designs</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>3 Social Media Graphics</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>2 Revisions</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Email Support</span>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="row">
+                  <div class="pricing-details">
+                      <span>20</span>
+                      <p>For professional use</p>
+                  </div>
+
+                  <ul class="features">
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>10 Logo Designs</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>10 Social Media Graphics</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>5 Website Graphics</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>5 Revisions</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Priority Email Support</span>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="row">
+                  <div class="pricing-details">
+                      <span>30</span>
+                      <p>For Established Businesses / Agencies</p>
+                  </div>
+
+                  <ul class="features">
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Unlimited Logo Designs</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Unlimited Social Media Graphics</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Unlimited Website Graphics</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Unlimited Revisions</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Dedicated Account Manager</span>
+                      </li>
+                      <li>
+                          <i class="ri-check-line"></i>
+                          <span>Priority Email and Phone Support</span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <button>Choose plan</button>
+  </div>
+  </div>
+  </section>
+
+  <!-- price card sections end -->
 
     <!-- projects -->
     <section class="projects-section-container" id="projects">
