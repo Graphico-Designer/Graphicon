@@ -336,116 +336,164 @@
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
+        <style>
+          .popup-container {
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #ffffff;
+              padding: 20px;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+              z-index: 9999;
+              width: 600px;
+              height: 400px;
+          }
+  
+          .overlay {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5);
+              z-index: 9998;
+          }
+  
+          .popup-image {
+              max-width: 100%;
+              max-height: 100%;
+          }
+      </style>
 
-    <div class="wrapper">
-      <input type="radio" name="slider" id="tab-1">
-      <input type="radio" name="slider" id="tab-2" checked>
-      <input type="radio" name="slider" id="tab-3">
-
-      <header>
-          <label for="tab-1" class="tab-1">Basic</label>
-          <label for="tab-2" class="tab-2">Standard</label>
-          <label for="tab-3" class="tab-3">Premium </label>
-          <div class="slider"></div>
-      </header>
-
-      <div class="cards-area">
-          <div class="cards">
-              <div class="row row-1">
-                  <div class="pricing-details">
-                      <span>10</span>
-                      <p>For beginner use</p>
+        <div class="wrapper">
+          <input type="radio" name="slider" id="tab-1">
+          <input type="radio" name="slider" id="tab-2" checked>
+          <input type="radio" name="slider" id="tab-3">
+  
+          <header>
+              <label for="tab-1" class="tab-1">Basic</label>
+              <label for="tab-2" class="tab-2">Standard</label>
+              <label for="tab-3" class="tab-3">Premium </label>
+              <div class="slider"></div>
+          </header>
+  
+          <div class="cards-area">
+              <div class="cards">
+                  <div class="row row-1">
+                      <div class="pricing-details">
+                          <span>10</span>
+                          <p>For beginner use</p>
+                      </div>
+  
+                      <ul class="features">
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>5 Logo Designs</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>3 Social Media Graphics</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>2 Revisions</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Email Support</span>
+                          </li>
+                      </ul>
                   </div>
-
-                  <ul class="features">
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>5 Logo Designs</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>3 Social Media Graphics</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>2 Revisions</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Email Support</span>
-                      </li>
-                  </ul>
-              </div>
-
-              <div class="row">
-                  <div class="pricing-details">
-                      <span>20</span>
-                      <p>For professional use</p>
+  
+                  <div class="row">
+                      <div class="pricing-details">
+                          <span>20</span>
+                          <p>For Established Businesses / Agencies</p>
+                      </div>
+  
+                      <ul class="features">
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>10 Logo Designs</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>10 Social Media Graphics</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>5 Website Graphics</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>5 Revisions</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Priority Email Support</span>
+                          </li>
+                      </ul>
                   </div>
-
-                  <ul class="features">
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>10 Logo Designs</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>10 Social Media Graphics</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>5 Website Graphics</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>5 Revisions</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Priority Email Support</span>
-                      </li>
-                  </ul>
-              </div>
-
-              <div class="row">
-                  <div class="pricing-details">
-                      <span>30</span>
-                      <p>For Established Businesses / Agencies</p>
+  
+                  <div class="row">
+                      <div class="pricing-details">
+                          <span>30</span>
+                          <p>For team collaboration</p>
+                      </div>
+  
+                      <ul class="features">
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Unlimited Logo Designs</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Unlimited Social Media Graphics</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Unlimited Website Graphics</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Unlimited Revisions</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Dedicated Account Manager</span>
+                          </li>
+                          <li>
+                              <i class="ri-check-line"></i>
+                              <span>Priority Email and Phone Support</span>
+                          </li>
+                      </ul>
                   </div>
-
-                  <ul class="features">
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Unlimited Logo Designs</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Unlimited Social Media Graphics</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Unlimited Website Graphics</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Unlimited Revisions</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Dedicated Account Manager</span>
-                      </li>
-                      <li>
-                          <i class="ri-check-line"></i>
-                          <span>Priority Email and Phone Support</span>
-                      </li>
-                  </ul>
               </div>
           </div>
+  
+          <button onclick="showPopup()">Choose plan</button>
+  
+          <!-- Payment Methods Popup -->
+          <div class="overlay" onclick="hidePopup()"></div>
+          <div class="popup-container" id="paymentPopup">
+              <img src="./src/png/logo-name-re.png" alt="Payment Method Image" class="popup-image">
+          </div>
       </div>
+  </div>
+  <script>
+    function showPopup() {
+        document.querySelector('.overlay').style.display = 'block';
+        document.querySelector('#paymentPopup').style.display = 'block';
+    }
 
-      <button>Choose plan</button>
-  </div>
-  </div>
+    function hidePopup() {
+        document.querySelector('.overlay').style.display = 'none';
+        document.querySelector('#paymentPopup').style.display = 'none';
+    }
+</script>
   </section>
 
   <!-- price card sections end -->
